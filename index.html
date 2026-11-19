@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OmniDrop 5</title>
+<meta name="description" content="OmniDrop 5, the drop-in five-in-a-row game for Android.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap">
+<style>
+  :root { --felt: #1f5a3c; --felt-deep: #17432d; --wood: #b98a52; --text: #fbf7ec; --soft: #d6e4da; --yellow: #f2c230; --red: #d8402f; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; display: grid; place-items: center; text-align: center;
+    background: radial-gradient(120% 140% at 20% 0%, var(--felt) 0%, var(--felt-deep) 100%);
+    border-top: 6px solid var(--wood); box-sizing: border-box;
+    color: var(--text); font-family: "Nunito Sans", system-ui, sans-serif; font-size: 18px; line-height: 1.6;
+    padding: 2rem max(16px, env(safe-area-inset-right, 0px)) 2rem max(16px, env(safe-area-inset-left, 0px));
+  }
+  main { display: grid; gap: 1rem; justify-items: center; max-width: 32rem; }
+  .pieces { display: flex; gap: 8px; }
+  .pieces span { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 -2px 0 rgba(0,0,0,.25); }
+  .y { background: var(--yellow); } .r { background: var(--red); }
+  h1 { font-family: "Baloo 2", "Nunito Sans", system-ui, sans-serif; font-size: clamp(2.5rem, 9vw, 3.5rem); line-height: 1; margin: 0; }
+  p { margin: 0; color: var(--soft); }
+  a { color: var(--yellow); font-weight: 700; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="pieces" aria-hidden="true"><span class="y"></span><span class="r"></span><span class="y"></span><span class="r"></span><span class="y"></span></div>
+  <h1>OmniDrop 5</h1>
+  <p>Drop pieces in from any side of the board to make five in a row. A game for Android.</p>
+  <p><a href="privacy-policy.html">Privacy policy</a></p>
+  <p>Contact: omnidropgame@gmail.com</p>
+</main>
+</body>
+</html>
